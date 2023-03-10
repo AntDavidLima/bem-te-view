@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: 5fr 10fr 6fr;
+}
+
+.container header {
+  padding: 1rem 1rem 0.5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container header nav {
+  margin-top: 2rem;
+}
+
+.container header nav ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.container header a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.container header a img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.container header a h1 {
+  font-size: 1.25rem;
+}
