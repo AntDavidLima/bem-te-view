@@ -6,6 +6,7 @@
   border-radius: 32px;
   transition: background-color 0.25s;
   cursor: pointer;
+  gap: 2rem;
 }
 
 .container:hover {

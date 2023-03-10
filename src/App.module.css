@@ -3,12 +3,13 @@
   grid-template-columns: 5fr 10fr 6fr;
 }
 
-.container header {
+.container > header {
   padding: 1rem 1rem 0.5rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
 }
 
 .container header nav {
@@ -38,3 +39,57 @@
 .container header a h1 {
   font-size: 1.25rem;
 }
+
+.container main {
+  margin-top: 1rem;
+}
+
+.container main form {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.picture {
+  background-color: var(--gray);
+  aspect-ratio: 1 / 1;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.formHeader {
+  display: flex;
+  gap: 1rem;
+}
+
+.formHeader textarea {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  resize: none;
+  outline: none;
+  font-size: 1.25rem;
+  max-height: 82vh;
+}
+
+.formHeader textarea::placeholder {
+  color: var(--gray);
+}
+
+.formFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formFooter button {
+  color: var(--white);
+  background-color: var(--brown);
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 32px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+

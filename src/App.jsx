@@ -1,8 +1,10 @@
 import { House } from '@phosphor-icons/react'
 
 import { ProfileSection } from './components/ProfileSection'
+import { AutogrowTextarea } from './components/AutogrowTextarea'
 
 import './global.css'
+
 import styles from './App.module.css'
 
 import logo from './assets/logo.svg';
@@ -10,6 +12,7 @@ import logo from './assets/logo.svg';
 export function App() {
   return (
     <div className={styles.container}>
+      <div />
       <header>
         <div>
           <a href="#">
@@ -27,7 +30,23 @@ export function App() {
         </div>
         <ProfileSection />
       </header>
-      <main>Main</main>
+      <main>
+        <header>
+          <h2>Página inicial</h2>
+        </header>
+        <form>
+          <div className={styles.formHeader}>
+            <div className={styles.picture} />
+            <AutogrowTextarea
+              placeholder='Que que tá rolando?'
+              maxLength={144}
+            />
+          </div>
+          <div className={styles.formFooter}>
+            <button type='submit'>Publicar</button>
+          </div>
+        </form>
+      </main>
       <aside>Aside</aside>
     </div>
   )
