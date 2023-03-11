@@ -1,4 +1,4 @@
-import { House } from '@phosphor-icons/react'
+import { Binoculars, House, X } from '@phosphor-icons/react'
 
 import { ProfileSection } from './components/ProfileSection'
 import { AutogrowTextarea } from './components/AutogrowTextarea'
@@ -47,7 +47,95 @@ export function App() {
           </div>
         </form>
       </main>
-      <aside>Aside</aside>
+      <aside>
+        <div className={styles.searchBar}>
+          <Binoculars size={24}/>
+          <label
+            htmlFor="search"
+            hidden
+          >
+            Campo de busca
+          </label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Buscar no Bem-te-view"
+          />
+        </div>
+        <div className={styles.searchResults}>
+          <header>
+            <h4>Recente</h4>
+            <button>Limpar tudo</button>
+          </header>
+          <main>
+            <ul>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+              <li>
+                <Binoculars size={40} />
+                <p>minha ultima pesquisa</p>
+                <button>
+                  <X size={16}/>
+                </button>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </aside>
     </div>
   )
 }

@@ -4,6 +4,7 @@
   --gray: #71767b;
   --gray-blue: #16181c;
   --yellow: #facb19;
+  --faded-yellow: rgba(250, 203, 25, 0.1);
   --brown: #3b322d;
 }
 
@@ -17,7 +18,7 @@ body {
   background-color: var(--black);
   color: var(--white);
   -webkit-font-smoothing: antialiased;
-  max-width: 75rem;
+  max-width: 80rem;
   margin: auto;
 }
 
