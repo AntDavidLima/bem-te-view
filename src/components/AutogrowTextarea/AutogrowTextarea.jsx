@@ -1,6 +1,6 @@
-import { createRef } from "react"
+import { createRef } from 'react'
 
-export function AutogrowTextarea({children, ...props}) {
+export function AutogrowTextarea({ children, ...props }) {
   const ref = createRef()
 
   return (
@@ -10,7 +10,7 @@ export function AutogrowTextarea({children, ...props}) {
       onInput={onInput}
       style={{
         height: ref.current?.scrollHeight,
-        overflowY: "auto"
+        overflowY: 'auto',
       }}
     >
       {children}
@@ -18,7 +18,7 @@ export function AutogrowTextarea({children, ...props}) {
   )
 
   function onInput() {
-    ref.current.style.height = 0;
-    ref.current.style.height = (ref.current?.scrollHeight) + "px";
+    ref.current.style.height = 0
+    ref.current.style.height = ref.current?.scrollHeight + 'px'
   }
 }
