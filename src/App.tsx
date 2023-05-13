@@ -8,16 +8,14 @@ import {
   Heart,
   Export,
   DotsThree,
-} from '@phosphor-icons/react'
+} from "@phosphor-icons/react";
 
-import { ProfileSection } from './components/ProfileSection'
-import { AutogrowTextarea } from './components/AutogrowTextarea'
+import { ProfileSection } from "./components/ProfileSection";
+import { AutogrowTextarea } from "./components/AutogrowTextarea";
 
-import './global.css'
+import "./global.css";
 
-import styles from './App.module.css'
-
-import logo from './assets/logo.svg'
+import styles from "./App.module.css";
 
 export function App() {
   return (
@@ -26,7 +24,7 @@ export function App() {
       <header>
         <div>
           <a href="#">
-            <img src={logo} alt="Logotipo do Bem-te-view" />
+            <img src="logo.svg" alt="Logotipo do Bem-te-view" />
             <h1>Bem-te-view</h1>
           </a>
           <nav>
@@ -51,6 +49,7 @@ export function App() {
               placeholder="Que que tá rolando?"
               maxLength={144}
             />
+            <textarea />
           </div>
           <div className={styles.formFooter}>
             <button type="submit">Publicar</button>
@@ -187,5 +186,5 @@ export function App() {
         </div>
       </aside>
     </div>
-  )
+  );
 }

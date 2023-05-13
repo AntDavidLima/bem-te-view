@@ -1,5 +1,5 @@
 {
-  "name": "bem-te-view",
+  "name": "test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
